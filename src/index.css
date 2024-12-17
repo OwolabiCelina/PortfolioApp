@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Lexend:wght@100..900&family=Manrope:wght@200..800&family=Ysabeau+Infant:ital,wght@0,1..1000;1,1..1000&family=Ysabeau:ital,wght@0,1..1000;1,1..1000&display=swap');
+
+:root {
+    --black: brown
+}
+
+.section{
+    /* padding-inline: '1rem' */
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+}
