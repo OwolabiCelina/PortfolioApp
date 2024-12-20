@@ -1,5 +1,7 @@
-import Image from '../assets/photo.jpeg';
 import { FaLessThanEqual } from "react-icons/fa";
+import Img1 from '../assets/translator.png'
+import Img3 from "../assets/to-do.png"
+
 
 
 const projects = [{
@@ -9,7 +11,9 @@ const projects = [{
             fugit perferendis. Quasi nemo, harum accusantium dolorum earum error voluptatem exercitationem.\
             Ex facilis nam aspernatur? Soluta iusto possimus explicabo in qui.",
     stack: "React, Typescript, Tailwind",
-
+    link: "https://translator-app-git-main-owolabicelinas-projects.vercel.app/",
+    img: Img1,
+    github: "https://github.com/OwolabiCelina/Translator-App"
 
 },
 {
@@ -19,7 +23,9 @@ const projects = [{
             fugit perferendis. Quasi nemo, harum accusantium dolorum earum error voluptatem exercitationem.\
             Ex facilis nam aspernatur? Soluta iusto possimus explicabo in qui.",
     stack: "React, Typescript, Tailwind",
-
+    link: "https://translator-app-git-main-owolabicelinas-projects.vercel.app/",
+    img: Img1,
+    github: "https://translator-app-git-main-owolabicelinas-projects.vercel.app/"
 
 },
 
@@ -30,7 +36,9 @@ const projects = [{
             fugit perferendis. Quasi nemo, harum accusantium dolorum earum error voluptatem exercitationem.\
             Ex facilis nam aspernatur? Soluta iusto possimus explicabo in qui.",
     stack: "React, Typescript, Tailwind",
-
+    link: "https://celinas-to-do-app.netlify.app/",
+    img: Img3,
+    github: "https://github.com/OwolabiCelina/My-ToDo/tree/master"
 
 },
 
@@ -41,7 +49,9 @@ const projects = [{
             fugit perferendis. Quasi nemo, harum accusantium dolorum earum error voluptatem exercitationem.\
             Ex facilis nam aspernatur? Soluta iusto possimus explicabo in qui.",
     stack: "React, Typescript, Tailwind",
-
+    link: "https://translator-app-git-main-owolabicelinas-projects.vercel.app/",
+    img: Img1,
+    github: "https://translator-app-git-main-owolabicelinas-projects.vercel.app/"
 },
 
 
@@ -71,26 +81,26 @@ const ProjectsPage = () => {
                     projects.map((project) => (
                         <div key={  project.number} className='lg:flex my-8 py-8 rounded-md justify-around items-center w-full max-w-7xl p-2 px-8 bg-[#212020] text-white '>
                             <div className="flex-1 px-4">
-                                <h1 className="text-3xl font-semibold"><span className='text-[#C081E4]'>01</span> {project.title}</h1>
+                                <h1 className="text-2xl md:text-3xl font-semibold"><span className='text-[#C081E4]'>01</span> {project.title}</h1>
                                 <p className=' mt-4 '>
                                     {project.desc}
                                 </p>
-                                <div className='flex gap-3 mt-4'>
+                                <div className='flex gap-3 mt-4 text-sm md:text-sm'>
                                     <p className="font-semibold">Stack:</p>
-                                    <p>{project.stack}</p>
+                                    <p className="">{project.stack}</p>
                                    
                                 </div>
                                 <div className='flex gap-3 mt-4 items-center'>
-                                    <a href="https://rentgage-app.netlify.app/" className="text-[#C081E4] hover:underline border-2 border-[#C081E4] rounded-lg p-2">
+                                    <a href={project.link} className="text-[#C081E4] hover:underline border-2 border-[#C081E4] rounded-lg p-2">
                                         Visit site
                                     </a>
-                                    <a href="https://rentgage-app.netlify.app/" className="text-[#C081E4] hover:underline">
+                                    <a href={project.github} className="text-[#C081E4] hover:underline">
                                         Go to GitHub
                                     </a>
                                 </div>
                             </div>
                             <div className="flex-1 px-4 flex justify-center">
-                                <img src={Image} alt="School of Walk project screenshot" className='w-[80%] max-w-[200px] h-auto object-cover rounded m-4' />
+                                <img src={project.img} alt="School of Walk project screenshot" className='w-full h-auto object-contain rounded m-4' />
                             </div>
                         </div>
                     ))

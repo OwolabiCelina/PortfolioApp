@@ -3,6 +3,7 @@ import SkillsPage from './skillspage';
 import ProjectsPage from './projects';
 import About from './about';
 import Experience from './experience';
+import Footer from './footer';
 
 const Home = () => {
     return ( 
@@ -20,7 +21,7 @@ const Home = () => {
 
        <div className="px-4 sm:px-8 md:px-14 lg:px-20 mt-6 max-w-[1200px] mx-auto">
             <h1 className="text-[#DBDCDF] font-semibold text-3xl sm:text-2xl md:text-3xl">Hi,</h1>
-            <p className="text-[#DBDCDF] text-base sm:text-lg md:text-xl lg:text-2xl font-medium mt-2 w-[70%] max-w-[90%]">
+            <p className="text-[#DBDCDF] text-xl md:text-2xl lg:text-2xl font-medium mt-2 w-[70%] max-w-[90%]">
                 I am Owolabi Omobanke, an experienced frontend developer with a passion for crafting engaging user experiences. Leveraging my skills in front-end technologies, I deliver polished and efficient solutions from concept to completion.
             </p>
        </div>
@@ -42,6 +43,10 @@ const Home = () => {
 
         <div className=''>
             <Experience />
+        </div>
+
+        <div>
+            <Footer />
         </div>
     </div> 
     );
